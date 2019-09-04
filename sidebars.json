@@ -1,0 +1,11 @@
+{
+  "docs": {
+    "分组一": ["doc1"],
+    "分组二": ["doc2"],
+    "分组三": ["doc3"]
+
+  },
+  "docs-other": {
+    "First Category": ["doc4", "doc5"]
+  }
+}

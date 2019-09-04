@@ -1,10 +1,6 @@
-FROM node:8.11.4
-
-WORKDIR /app/website
-
-EXPOSE 3000 35729
-COPY ./docs /app/docs
-COPY ./website /app/website
-RUN yarn install
-
-CMD ["yarn", "start"]
+FROM luck135246/docusaurus-doc-test:v1
+COPY mydocs/ /app/docs
+COPY img/  /app/website/static/img
+COPY ./sidebars.json /app/website/sidebars.json
+ 
+CMD ["yarn","start"]
